@@ -5,3 +5,24 @@ if valor_sacar > 0 :
     novo= Saldo-valor_sacar
     print  ("seu saque foi realizado com sucesso.")
     print  (f"seu saldo atual e de {novo}")
+
+
+
+Saldo = 500.00
+print (f"seu saldo atual e de R${Saldo}")
+valor_sacar = int (input("Qunto voce gostaria de sacar? R$"))
+if valor_sacar > 0 :
+    novo= Saldo-valor_sacar
+    if valor_sacar > Saldo:
+         print("Saldo insuficiente para realizar o saque.")
+         if valor_sacar > 500.00:
+             print(f"fazer um emprestimo?")
+             credito = (input(f"\nsim/não? "))
+             if credito == "sim":
+                 print("Otimo, vamos providenciar alguem para falar com voce")
+                 if credito == "não":
+                     print("Agradecemos a resposta!")
+             
+         exit()
+    print  ("seu saque foi realizado com sucesso.")
+    print  (f"seu saldo atual e de {novo}")
