@@ -1,0 +1,7 @@
+Saldo = 500.00
+print (f"seu saldo atual e de R${Saldo}")
+valor_sacar = int (input("Qunto voce gostaria de sacar? R$"))
+if valor_sacar > 0 :
+    novo= Saldo-valor_sacar
+    print  ("seu saque foi realizado com sucesso.")
+    print  (f"seu saldo atual e de {novo}")
